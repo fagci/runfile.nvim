@@ -2,6 +2,14 @@
 
 Run current opened file
 
+## Install
+
+Packer
+
+```lua
+use fagci/runfile.nvim
+```
+
 ## Usage
 
 Simple
