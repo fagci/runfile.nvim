@@ -7,7 +7,7 @@ Run current opened file
 Packer
 
 ```lua
-use fagci/runfile.nvim
+use 'fagci/runfile.nvim'
 ```
 
 ## Usage
