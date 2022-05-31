@@ -1,23 +1,5 @@
 local M = {}
-
-local function shell_escape(args)
-    local ret = {}
-    for _, a in pairs(args) do
-        local s = tostring(a)
-        if s:match("[^A-Za-z0-9_/:=-]") then
-            s = "'" .. s:gsub("'", "'\\''") .. "'"
-        end
-        table.insert(ret, s)
-    end
-    return table.concat(ret, ' ')
-end
-
-local function expand_command(cmd, args)
-    return cmd
-        :gsub("{f}", vim.fn.expand('%'))
-        :gsub("{r}", vim.fn.expand('%:r'))
-        :gsub("{a}", args and shell_escape(args) or '')
-end
+local utils = require('runfile.utils')
 
 -- Run opened file in shell with args
 M.run = function(...)
@@ -47,7 +29,7 @@ M.run = function(...)
         return
     end
 
-    local command = expand_command(cmd, ...)
+    local command = utils.expand_command(cmd, ...)
 
     print('Running: ' .. command)
     vim.cmd('term ' .. command)
