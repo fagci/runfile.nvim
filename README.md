@@ -42,9 +42,24 @@ With parameters
 - ruby
 - sh
 
-## Example setup
+## Example setup using packer
 
-Using packer
+### Inline
+
+```lua
+use {
+    'fagci/runfile.nvim', 
+    config = function()
+        require('runfile').setup({
+            mappings = {
+                ['zsh'] = 'zsh {f} {a}'
+            }
+        })
+    end
+}
+```
+
+### Modular
 
 ```lua
 use {
@@ -54,8 +69,6 @@ use {
 ```
 
 Note: change config path (plugins.config.runfile) to yours.
-
-### Setup mappings
 
 ```lua
 local runfile = require('runfile')
