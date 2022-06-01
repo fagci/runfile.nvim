@@ -26,8 +26,6 @@ With parameters
 
 ## Example setup using packer
 
-### Inline
-
 ```lua
 use {
     'fagci/runfile.nvim', 
@@ -39,27 +37,6 @@ use {
         })
     end
 }
-```
-
-### Modular
-
-```lua
-use {
-    'fagci/runfile.nvim', 
-    config = [[require('plugins.config.runfile')]]
-}
-```
-
-Note: change config path (plugins.config.runfile) to yours.
-
-```lua
-local runfile = require('runfile')
-
-runfile.setup({
-    mappings = {
-        ['zsh'] = 'zsh {f} {a}'
-    }
-})
 ```
 
 ### Expansions
