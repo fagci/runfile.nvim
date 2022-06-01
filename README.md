@@ -24,24 +24,6 @@ With parameters
 :lua require('runfile').run({'-f', 'value'})
 ```
 
-## Supported filetypes
-
-- applescript
-- elixir
-- erlang
-- ghci
-- go
-- idris
-- java
-- javascript
-- lua
-- moon
-- perl
-- php
-- python
-- ruby
-- sh
-
 ## Example setup using packer
 
 ### Inline
@@ -94,3 +76,21 @@ File path parts (expanded '%')
 Arguments
 
 - {a} arguments
+
+## Supported filetypes
+
+- applescript
+- elixir
+- erlang
+- ghci
+- go
+- idris
+- java
+- javascript
+- lua
+- moon
+- perl
+- php
+- python
+- ruby
+- sh
