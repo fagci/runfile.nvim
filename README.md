@@ -26,6 +26,8 @@ With parameters
 
 ## Example setup using packer
 
+Applied over [default mappings](https://github.com/fagci/runfile.nvim/blob/main/lua/runfile/init.lua)
+
 ```lua
 use {
     'fagci/runfile.nvim', 
