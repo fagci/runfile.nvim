@@ -18,7 +18,7 @@ M.run = function(...)
         ['php'] = 'php {f} {a}',
         ['python'] = 'python {f} {a}',
         ['ruby'] = 'ruby {f} {a}',
-        ['sh'] = 'sh {f} {a}',
+        ['sh'] = '{f} {a}',
     }
 
     local ft = vim.bo.filetype
