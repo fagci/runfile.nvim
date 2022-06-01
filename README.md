@@ -84,13 +84,13 @@ runfile.setup({
 
 File path parts (expanded '%')
 
-{f} file path
-{p}	full path
-{h}	head (last path component removed)
-{t}	tail (last path component only)
-{r}	root (one extension removed)
-{e}	extension only
+- {f} file path
+- {p} full path
+- {h} head (last path component removed)
+- {t} tail (last path component only)
+- {r} root (one extension removed)
+- {e} extension only
 
 Arguments
 
-{a} arguments
+- {a} arguments
