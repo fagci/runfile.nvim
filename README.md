@@ -15,10 +15,18 @@ use 'fagci/runfile.nvim'
 Simple
 
 ```
+:RunFile
+```
+
+```
 :lua require('runfile').run()
 ```
 
 With parameters
+
+```
+:RunFile -f value
+```
 
 ```
 :lua require('runfile').run({'-f', 'value'})
