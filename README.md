@@ -12,21 +12,29 @@ use 'fagci/runfile.nvim'
 
 ## Usage
 
-Simple
+### Simple
+
+As command
 
 ```
 :RunFile
 ```
 
+As lua code
+
 ```
 :lua require('runfile').run()
 ```
 
-With parameters
+### With parameters
+
+As command
 
 ```
 :RunFile -f value
 ```
+
+As lua code
 
 ```
 :lua require('runfile').run({'-f', 'value'})
