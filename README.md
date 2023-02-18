@@ -1,5 +1,7 @@
 # runfile.nvim
 
+`NOTE: use make command instead with makeprg`
+
 Run current opened file
 
 ## Install
